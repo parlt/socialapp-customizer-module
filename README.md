@@ -1040,6 +1040,6 @@ For issues related to this duplicate prevention fix:
 
 **Module Version:** 1.0.0
 **Last Updated:** 2024
-**Author:** SocialApp Team
+**Author:** parlt
 
 ---
