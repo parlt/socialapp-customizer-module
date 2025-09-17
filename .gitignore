@@ -1,0 +1,39 @@
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+/vendor/
+composer.lock
+
+# Testing
+/phpunit.xml
+/phpcs.xml
+.phpunit.result.cache
+.phpcs-cache
+
+# Build
+/build/
+/dist/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+
+# Magento generated
+/generated/
+/var/
+
+# Documentation build
+/docs/_build/

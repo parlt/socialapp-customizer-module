@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+
+    <!--
+        Observer to prevent duplicate items in quote address
+        This replaces the problematic legacy observer code
+
+        Note: You need to identify the correct event name used by your legacy observer.
+        Common events for order creation:
+        - sales_order_place_after
+        - checkout_submit_all_after
+        - sales_model_service_quote_submit_before
+
+        Update the event name below to match your legacy observer's event
+    -->
+    <event name="sales_order_place_after">
+        <observer name="socialapp_customizer_prevent_address_duplicates"
+                  instance="SocialApp\Customizer\Observer\PreventQuoteAddressDuplicates"/>
+    </event>
+</config>
